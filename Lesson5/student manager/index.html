@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Manager — управление списком студентов учебной группы.">
+    <title>Student Manager — Управление студентами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a class="logo" href="#home">Student Manager</a>
+            <nav class="navigation" aria-label="Основная навигация">
+                <a href="#home">Главная</a>
+                <a href="#students">Студенты</a>
+                <a href="#about">О нас</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro" id="home">
+            <p class="eyebrow">Простое управление группой</p>
+            <h1>Управление студентами</h1>
+            <p class="intro-text">Добавляйте студентов и просматривайте список группы</p>
+        </section>
+
+        <section class="panel form-panel" aria-labelledby="form-title">
+            <h2 id="form-title">Добавить студента</h2>
+            <form class="student-form">
+                <div class="form-field">
+                    <label for="first-name">Имя</label>
+                    <input id="first-name" name="first-name" type="text" placeholder="Например, Арман" required>
+                </div>
+                <div class="form-field">
+                    <label for="last-name">Фамилия</label>
+                    <input id="last-name" name="last-name" type="text" placeholder="Например, Алиев" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="name@mail.com" required>
+                </div>
+                <div class="form-field">
+                    <label for="group">Группа</label>
+                    <input id="group" name="group" type="text" placeholder="Например, IT-24" required>
+                </div>
+                <button class="add-button" type="submit">Добавить студента</button>
+            </form>
+        </section>
+
+        <section class="panel students-panel" id="students" aria-labelledby="students-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Список группы</p>
+                    <h2 id="students-title">Студенты</h2>
+                </div>
+                <span class="student-count">5 студентов</span>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Имя</th>
+                            <th scope="col">Фамилия</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Группа</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Арман</td>
+                            <td>Алиев</td>
+                            <td>arman@mail.com</td>
+                            <td><span class="group-badge">IT-24</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Данияр</td>
+                            <td>Садыков</td>
+                            <td>daniyar@mail.com</td>
+                            <td><span class="group-badge">IT-25</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Иван</td>
+                            <td>Самойленко</td>
+                            <td>ivan@mail.com</td>
+                            <td><span class="group-badge">IT-24</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Матвей</td>
+                            <td>Белаусов</td>
+                            <td>matvey@mail.com</td>
+                            <td><span class="group-badge">IT-25</span></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Ермухамед</td>
+                            <td>Ернаров</td>
+                            <td>ermuhamed@mail.com</td>
+                            <td><span class="group-badge">IT-24</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="about" id="about" aria-labelledby="about-title">
+            <div>
+                <p class="eyebrow">О проекте</p>
+                <h2 id="about-title">Всё о группе — в одном месте</h2>
+                <p>Student Manager — веб-приложение для хранения информации о студентах и удобного просмотра списка учебной группы.</p>
+            </div>
+            <a class="about-link" href="#home">Подробнее <span aria-hidden="true">→</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Student Manager</p>
+    </footer>
+</body>
+</html>
